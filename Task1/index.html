@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash Kumar Sah - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #toggle-theme {
+        display: none;
+      }
+
+      body:has(#toggle-theme:checked) {
+        --primary: #6366f1;
+        --secondary: #8b5cf6;
+        --accent: #06b6d4;
+        --bg-primary: #0f0f23;
+        --bg-secondary: #1a1a3e;
+        --text-primary: #ffffff;
+        --text-secondary: #a1a1aa;
+        --glass-bg: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(255, 255, 255, 0.1);
+      }
+
+      .theme-toggle {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      .theme-toggle:hover {
+        transform: scale(1.1) rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle-theme" />
+
+    <nav>
+      <div class="nav-content">
+        <div class="logo">Akash Kumar Sah</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <label for="toggle-theme" class="theme-toggle" title="Toggle Theme">🌓</label>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Akash Kumar</h1>
+          <p class="hero-subtitle">Full-Stack Engineer & IoT Enthusiast</p>
+          <p class="hero-description">
+            Designing seamless web solutions with cutting-edge tools. I'm a final-year student passionate about scalable and efficient digital development.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="profile-image">
+            <div class="profile-placeholder"><img src="me.jpg" alt=""></div>
+          </div>
+          <div class="bio">
+            <p>Hey there! I’m Akash, a dedicated full-stack developer and soon-to-be engineering graduate specializing in IoT. My interest in coding sparked from curiosity, transforming into a mission to build impactful digital products through clean code. Outside of development, I enjoy tech exploration, contributing to collaborative software, and mentoring fellow developers.
+              Over the years, I’ve worked on several real-world projects that blend both frontend elegance and backend efficiency. I have a strong foundation in data structures and algorithms, which helps me write optimized and scalable solutions. I thrive in team environments where knowledge-sharing and continuous learning are encouraged.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2 class="section-title">My Skill Set</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend Expertise</h3>
+            <p>Skilled in React, Next.js, TypeScript, Tailwind CSS, modern JavaScript, and mobile-first responsive design.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Backend Mastery</h3>
+            <p>Proficient in Node.js, Express, building REST APIs, managing authentication, and handling server logic.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Tools & Databases</h3>
+            <p>Experienced with MongoDB, PostgreSQL, Git, GitHub, Docker containers, and testing libraries.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Analytical Thinking</h3>
+            <p>Expertise in designing algorithms, optimizing codebases, building system architecture, and debugging efficiently.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="section-title">Highlighted Work</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">E-Commerce Platform</div>
+            <div class="project-content">
+              <h3>E-Commerce System</h3>
+              <p>An end-to-end shopping site with React, Tailwind CSS, Node, MongoDB, secure login, and real-time order handling.</p>
+              <div class="project-links">
+                <!-- <a href="#" class="project-link">Live Demo</a> -->
+                <a href="https://github.com/akash284374/ecommerce" class="project-link">Github Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">Blog Application</div>
+            <div class="project-content">
+              <h3>Modern Blogging Platform</h3>
+              <p>Feature-rich blog app powered by PostgreSQL, Prisma, user auth, markdown content, and a clean user dashboard.</p>
+              <div class="project-links">
+                <!-- <a href="#" class="project-link">Live Demo</a> -->
+                <a href="https://github.com/akash284374/blogs" class="project-link">Github Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <h2 class="section-title">My Resume</h2>
+        <div class="resume-content">
+          <h3>Interested in Working Together?</h3>
+          <p>Get a comprehensive look at my qualifications, education, and technical experience by downloading my resume.</p>
+            <a href="Akash_Resume.pdf" class="download-btn" download>📄 Download Resume</a>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <p>Whether you have a project in mind or just want to say hello, I’m open to connect and collaborate.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>📧 Email</h3>
+              <a href="mailto:akash284374@gmail.com">akash284374@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <h3>💻 GitHub</h3>
+              <a href="https://github.com/akash284374/" target="_blank">github.com/akash284374</a>
+            </div>
+            <div class="contact-item">
+              <h3>📍 Location</h3>
+              <span>Kolkata, West Bengal, India</span>
+            </div>
+            <div class="contact-item">
+              <h3>🎓 Academic</h3>
+              <span>Final Year B.Tech – CSE (IoT)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Akash Kumar Sah. Built with creativity, purpose, and powerful technologies.</p>
+      </div>
+    </footer>
+  </body>
+</html>
